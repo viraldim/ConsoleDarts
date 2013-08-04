@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ConsoleDarts.ArrowOverArrowException">
+    <Position X="11.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ArrowOverArrowException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConsoleDarts.ConsoleProcesses">
+    <Position X="7.75" Y="3" Width="1.5" />
+    <AssociationLine Name="Singleton" Type="ConsoleDarts.Singleton">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.496" Y="0.088" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAAAAAAAAAAAAIAAAAEAAQAAAAAAAAA=</HashCode>
+      <FileName>ConsoleProcesses.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Singleton" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ConsoleDarts.Dot" BaseTypeListCollapsed="true">
+    <Position X="11.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAgAAAgAEQgAAAAAAAAEAAACBAABggAAAYAA=</HashCode>
+      <FileName>Dot.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ConsoleDarts.DotTypes">
+    <Position X="13.25" Y="0.5" Width="1.5" />
+    <AssociationLine Name="Dot" Type="ConsoleDarts.Dot">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.054" Y="0.06" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAQAAAAAAAAAAAACAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DotTypes.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Dot" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ConsoleDarts.GameManager">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <AssociationLine Name="GreatingsEventArgs" Type="ConsoleDarts.GreatingsEventArgs">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.158" Y="0.173" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="ArrowOverArrowException" Type="ConsoleDarts.ArrowOverArrowException">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.166" Y="-0.081" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="MoveThroughLine" Type="ConsoleDarts.MoveThroughLine">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.101" Y="0.074" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="HorozontalMovement" Type="ConsoleDarts.HorozontalMovement">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.96" Y="0.159" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAgAQAAKAAAAICAEAACAAAAAAAAEAQQAAI=</HashCode>
+      <FileName>GameManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="GreatingsEventArgs" />
+      <Property Name="ArrowOverArrowException" />
+      <Property Name="MoveThroughLine" />
+      <Property Name="HorozontalMovement" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ConsoleDarts.GameObject">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObject.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ConsoleDarts.GreatingsEventArgs">
+    <Position X="13.25" Y="2.5" Width="1.5" />
+    <NestedTypes>
+      <Delegate Name="ConsoleDarts.GreatingsEventArgs.GreatingsEventHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>GreatingsEventArgs.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAACAAACAAAAIAAAAAA=</HashCode>
+      <FileName>GreatingsEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConsoleDarts.HorozontalMovement">
+    <Position X="2.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAIAQAgAAAAAAAAAAAAAAAAAAAABAEAAAQAA=</HashCode>
+      <FileName>HorizontalMovement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConsoleDarts.Line" BaseTypeListCollapsed="true">
+    <Position X="9.5" Y="4.5" Width="1.5" />
+    <AssociationLine Name="Dot" Type="ConsoleDarts.Dot">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.073" Y="0.06" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAgAAAAAAAAAACAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Line.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Dot" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ConsoleDarts.LineTypes">
+    <Position X="9.5" Y="0.5" Width="1.5" />
+    <AssociationLine Name="Line" Type="ConsoleDarts.Line">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.58" Y="0.06" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>CAAAAAAIQEAEAAgAQAQAAAAAAAAACAEAAAAQAAAhAAA=</HashCode>
+      <FileName>LineTypes.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Line" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ConsoleDarts.MoveThroughLine">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAJAQAgAAAAAAAAQAAAAAAAAAAABgAAAAIAA=</HashCode>
+      <FileName>MoveTroughLine.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ConsoleDarts.Program">
+    <Position X="7.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConsoleDarts.Singleton">
+    <Position X="7.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAABAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Singleton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="ConsoleDarts.ShotsLocation">
+    <Position X="5.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAA=</HashCode>
+      <FileName>ShotsLocation.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Interface Name="ConsoleDarts.ICountable">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ICountable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ConsoleDarts.IDrawable">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IDrawable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ConsoleDarts.IMovable">
+    <Position X="0.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IMovable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="ConsoleDarts.Strings">
+    <Position X="0.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAIAAAAAEAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>Strings.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
